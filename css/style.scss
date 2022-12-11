@@ -212,7 +212,7 @@ input[type="radio"], input[type="checkbox"] {
     display: none;
     min-width: 30px;
     height: 24px;
-    background: url(/img/icons/burger.svg) center center no-repeat;
+    background: url(../img/icons/burger.svg) center center no-repeat;
     &:hover {
       filter: invert(58%) sepia(100%) saturate(1363%) hue-rotate(359deg) brightness(100%)
         contrast(106%);
@@ -221,7 +221,7 @@ input[type="radio"], input[type="checkbox"] {
       outline: 2px solid var(--button2-focus-color);
     }
     &:active {
-      background: url(/img/icons/burger-active.svg) center center no-repeat;
+      background: url(../img/icons/burger-active.svg) center center no-repeat;
     }
   }
   &__logo {
@@ -239,7 +239,7 @@ input[type="radio"], input[type="checkbox"] {
     display: none;
     width: 24px;
     height: 24px;
-    background: url(/img/icons/close-menu.svg) center center no-repeat;
+    background: url(../img/icons/close-menu.svg) center center no-repeat;
     &:hover {
       filter: invert(58%) sepia(100%) saturate(1363%) hue-rotate(359deg) brightness(100%)
         contrast(106%);
@@ -287,7 +287,7 @@ input[type="radio"], input[type="checkbox"] {
     width: 24px;
     height: 24px;
     margin-left: 262px;
-    background: url(/img/icons/search.svg) center center no-repeat;
+    background: url(../img/icons/search.svg) center center no-repeat;
     &:hover {
       filter: invert(58%) sepia(100%) saturate(1363%) hue-rotate(359deg) brightness(100%)
         contrast(106%);
@@ -336,7 +336,7 @@ input[type="radio"], input[type="checkbox"] {
     margin-left: 15px;
     width: 24px;
     height: 24px;
-    background: url(/img/icons/search.svg) center center no-repeat;
+    background: url(../img/icons/search.svg) center center no-repeat;
     background-size: contain;
     filter: invert(58%) sepia(100%) saturate(1363%) hue-rotate(359deg) brightness(100%)
       contrast(106%);
@@ -348,7 +348,7 @@ input[type="radio"], input[type="checkbox"] {
     margin-left: 20px;
     width: 24px;
     height: 24px;
-    background: url(/img/icons/close_search.svg) center center no-repeat;
+    background: url(../img/icons/close_search.svg) center center no-repeat;
     background-size: contain;
 
     &:hover {
@@ -467,7 +467,7 @@ input[type="radio"], input[type="checkbox"] {
       position: absolute;
       inset: 0 0 0 0;
       z-index: 0;
-      background: url(/img/covers/article.jpg) center center no-repeat;
+      background: url(../img/covers/article.jpg) center center no-repeat;
       background-size: cover;
     }
   }
@@ -523,12 +523,12 @@ input[type="radio"], input[type="checkbox"] {
   }
   &_box-img {
     &::before {
-      background-image: url(/img/icons/box.svg);
+      background-image: url(../img/icons/box.svg);
     }
   }
   &_gear-img {
     &::before {
-      background-image: url(/img/icons/gear.svg);
+      background-image: url(../img/icons/gear.svg);
     }
   }
 }
@@ -682,7 +682,7 @@ input[type="radio"], input[type="checkbox"] {
       right: 0;
       width: 50px;
       height: 50px;
-      background: url(/img/icons/plus.svg) center center no-repeat;
+      background: url(../img/icons/plus.svg) center center no-repeat;
       background-color: #cacaca;
       border-radius: 50%;
       transition: transform 0.2s ease;
@@ -818,7 +818,7 @@ input[type="radio"], input[type="checkbox"] {
     }
     &:checked {
       &:before {
-        background: url(/img/icons/check.svg) center center no-repeat;
+        background: url(../img/icons/check.svg) center center no-repeat;
       }
     }
   }
@@ -1341,12 +1341,12 @@ input[type="radio"], input[type="checkbox"] {
     }
     &_box-img {
       &::before {
-        background-image: url(/img/icons/box-sm.svg);
+        background-image: url(../img/icons/box-sm.svg);
       }
     }
     &_gear-img {
       &::before {
-        background-image: url(/img/icons/gear-sm.svg);
+        background-image: url(../img/icons/gear-sm.svg);
       }
     }
     &__card-header {
