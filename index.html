@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Евклид - проектные системы</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <button
+          class="header__burger"
+          onclick="toggleMenu()"
+          aria-label="открыть навигацию"
+        ></button>
+
+        <img src="/img/Logo.png" alt="Евклид - проектные системы" class="header__logo activeFlex" />
+
+        <nav class="header__navbar active">
+          <button
+            class="header__navbar_close"
+            onclick="toggleMenu()"
+            aria-label="закрыть навигацию"
+          ></button>
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item"><a href="#about">О нас</a></li>
+            <li class="header__navbar-item"><a href="#projects">Проекты</a></li>
+            <li class="header__navbar-item"><a href="#steps">Этапы</a></li>
+            <li class="header__navbar-item"><a href="#feedback">Отзывы</a></li>
+            <li class="header__navbar-item"><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="header__search active" onclick="toggleSearch()" aria-label="поиск"></button>
+        <div class="search-container header__search-container" role="search">
+          <input type="text" class="search-container__input" placeholder="Что будем искать?" />
+          <div class="search-container__buttons-container">
+            <button class="search-container__search" aria-label="найти"></button>
+            <button
+              class="search-container__close"
+              onclick="toggleSearch()"
+              aria-label="закрыть поисковую панель"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="hero">
+          <div class="swiper hero__background" aria-hidden="true" role="presentation">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="hero__image" src="/img/covers/hero-1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="hero__image" src="/img/covers/hero-2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="hero__image" src="/img/covers/hero-3.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination" aria-hidden="true" role="presentation"></div>
+          </div>
+
+          <div class="hero__container">
+            <h1 class="hero__heading">Проектные решения любой сложности</h1>
+            <p class="hero__description">
+              Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
+              остаются уделом проектантов
+            </p>
+            <button class="btn-main">Заказать расчёт</button>
+            <button class="btn-main_extra-small hero__btn">Заказать расчёт</button>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <article class="about__article">
+            <h2 class="about__header article-header">О нас</h2>
+            <p class="about__description article-description">
+              Также как перспективное планирование создаёт необходимость включения
+              в производственный план целого ряда внеочередных мероприятий с учётом комплекса
+              экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы
+              связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того,
+              что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных,
+              так и внешне зависимых концептуальных решений! Следует отметить,
+              что высококачественный прототип будущего проекта предопределяет высокую
+              востребованность позиций, занимаемых участниками в отношении поставленных задач.
+              Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта
+              способствует повышению качества экспериментов.
+            </p>
+          </article>
+          <div class="about__cards-wrapper">
+            <div class="about__main-card">
+              <div class="about__main-card-caption">
+                <p class="about__main-card-description article-description">
+                  Принимая во внимание показатели успешности, перспективное планирование
+                  способствует подготовке и реализации новых принципов
+                </p>
+                <button class="about__main-card-btn btn-second">Подробнее</button>
+              </div>
+            </div>
+            <div class="about__cards-container">
+              <div class="about__card about_box-img">
+                <h3 class="about__card-header card-header">Консультация с широким активом</h3>
+                <p class="about__card-description article-description">
+                  А также свежий взгляд на привычные вещи — безусловно открывает новые горизонты
+                  для как самодостаточных, так и внешне зависимых концептуальных решений
+                </p>
+              </div>
+              <div class="about__card about_gear-img">
+                <h3 class="about__card-header card-header">В своём стремлении повысить</h3>
+                <p class="about__card-description article-description">
+                  Качество жизни, они забывают, что сплочённость команды профессионалов представляет
+                  собой интересный эксперимент проверки прогресса профессионального сообщества
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="how-work" id="steps">
+          <h2 class="how-work__section-header article-header">Как мы работаем</h2>
+          <div class="how-work__steps-container">
+            <input
+              class="how-work__step active"
+              onclick="changeArticle(event)"
+              type="radio"
+              name="work-steps"
+              data-step="1"
+              aria-label="шаг первый"
+              checked
+            />
+            <input
+              class="how-work__step"
+              onclick="changeArticle(event)"
+              type="radio"
+              name="work-steps"
+              data-step="2"
+              aria-label="шаг второй"
+            />
+            <input
+              class="how-work__step"
+              onclick="changeArticle(event)"
+              type="radio"
+              name="work-steps"
+              data-step="3"
+              aria-label="шаг третий"
+            />
+            <input
+              class="how-work__step"
+              onclick="changeArticle(event)"
+              type="radio"
+              name="work-steps"
+              data-step="4"
+              aria-label="шаг четвёртый"
+            />
+          </div>
+          <div class="how-work__article-wrapper">
+            <div class="how-work__article-container">
+              <article class="how-work__article active" data-step-article="1">
+                <h3 class="how-work__article-header">Проводим консультацию</h3>
+                <p class="how-work__article-description">
+                  Влечёт за собой процесс внедрения и модернизации приоритизации разума
+                  над эмоциями. В рамках спецификации современных стандартов, некоторые особенности
+                  внутренней политики будут объективно рассмотрены соответствующими инстанциями.
+                  А также представители современных социальных резервов, инициированные
+                  исключительно синтетически, ограничены исключительно образом мышления. Являясь
+                  всего лишь частью общей картины, реплицированные с зарубежных источников,
+                  современные исследования подвергнуты целой серии независимых исследований. Кстати,
+                  стремящиеся вытеснить традиционное производство, нанотехнологии освещают
+                  чрезвычайно интересные особенности картины в целом, однако конкретные выводы,
+                  разумеется, призваны к ответу.
+                </p>
+              </article>
+              <article class="how-work__article" data-step-article="2">
+                <h3 class="how-work__article-header">Составляем смету</h3>
+                <p class="how-work__article-description">
+                  Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации
+                  современных стандартов, некоторые особенности внутренней политики будут объективно
+                  рассмотрены соответствующими инстанциями. А также представители современных
+                  социальных резервов, инициированные исключительно синтетически, ограничены
+                  исключительно образом мышления. Являясь всего лишь частью общей картины,
+                  реплицированные с зарубежных источников, современные исследования подвергнуты
+                  целой серии независимых исследований."
+                </p>
+              </article>
+              <article class="how-work__article" data-step-article="3">
+                <h3 class="how-work__article-header">Привлекаем подрядчиков</h3>
+                <p class="how-work__article-description">
+                  Идейные соображения высшего порядка, а также новая модель организационной
+                  деятельности требует анализа прогресса профессионального сообщества. Высокий
+                  уровень вовлечения представителей целевой аудитории является чётким
+                  доказательством простого факта: высококачественный прототип будущего проекта
+                  напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт
+                  говорит нам, что новая модель организационной деятельности говорит о возможностях
+                  системы массового участия. Принимая во внимание показатели успешности, постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить
+                  важные задания по разработке прогресса профессионального сообщества."
+                </p>
+              </article>
+              <article class="how-work__article" data-step-article="4">
+                <h3 class="how-work__article-header">Инспектируем все этапы работ</h3>
+                <p class="how-work__article-description">
+                  Высокий уровень вовлечения представителей целевой аудитории является чётким
+                  доказательством простого факта: высококачественный прототип будущего проекта
+                  напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт
+                  говорит нам, что новая модель организационной деятельности говорит о возможностях
+                  системы массового участия.Принимая во внимание показатели успешности, постоянное
+                  информационно - пропагандистское обеспечение нашей деятельности позволяет."
+                </p>
+              </article>
+              <div class="how-work__btns-container">
+                <a href="#" class="how-work__btn-more btn-main_small">Подробнее</a>
+                <a href="#" class="how-work__btn-contract btn-third">Договор</a>
+              </div>
+            </div>
+            <img
+              src="/img/covers/how-1.jpg"
+              class="how-work__article-img active"
+              data-step-img="1"
+              alt=""
+            />
+            <img
+              src="/img/covers/how-2.jpg"
+              class="how-work__article-img"
+              data-step-img="2"
+              alt=""
+            />
+            <img
+              src="/img/covers/how-3.jpg"
+              class="how-work__article-img"
+              data-step-img="3"
+              alt=""
+            />
+            <img
+              src="/img/covers/how-4.jpg"
+              class="how-work__article-img"
+              data-step-img="4"
+              alt=""
+            />
+          </div>
+        </section>
+        <section class="faq">
+          <h2 class="faq__header article-header">Часто задаваемые вопросы</h2>
+          <div class="faq__container">
+            <details class="faq__question-block">
+              <summary class="faq__question">
+                Из чего формируется конечная стоимость проекта?
+              </summary>
+              <p class="faq__answer">
+                Являясь всего лишь частью общей картины, непосредственные участники технического
+                прогресса призывают нас  к новым свершениям, которые, в свою очередь, должны быть
+                своевременно верифицированы. Но высококачественный прототип будущего проекта
+                является качественно новой ступенью первоочередных требований. А ещё некоторые
+                особенности внутренней политики, которые представляют собой яркий пример
+                континентально-европейского типа политической культуры, будут объявлены нарушающими
+                общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы
+                институционализации призывают нас к новым свершениям, которые, в свою очередь,
+                должны быть указаны как претенденты на роль ключевых факторов.
+              </p>
+              <p class="faq__answer">
+                Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут
+                быть призваны к ответу. Явные признаки победы институционализации набирают
+                популярность среди определённых слоёв населения, а значит, должны быть объединены
+                в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие
+                известные личности призывают нас к новым свершениям, которые, в свою очередь, должны
+                быть представлены в исключительно положительном свете.
+              </p>
+            </details>
+            <details class="faq__question-block">
+              <summary class="faq__question">
+                У меня есть свой проект. Сможем ли мы его доработать / реализовать?
+              </summary>
+              <p class="faq__answer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nesciunt eius?
+                Pariatur dolores commodi, officiis error est consequuntur. Quis quo facilis fuga
+                officiis dolore rem earum dicta ipsum cum porro? Aliquid voluptate praesentium
+                eligendi harum architecto dolores dolorem dicta excepturi et aut. Consequuntur
+                dignissimos adipisci tempore minima? Beatae, suscipit laudantium atque repellendus
+                veniam nihil consequuntur earum, id nulla perferendis voluptas. Veniam sint
+                laboriosam a numquam distinctio natus quidem quis ipsa laborum fugit labore quos,
+                inventore, asperiores quas iure tempore. Corrupti commodi voluptatem magnam
+                molestiae tempora voluptatum quod iste aperiam pariatur.
+              </p>
+            </details>
+            <details class="faq__question-block">
+              <summary class="faq__question">
+                Я выбираю между разными компаниями. В чём ваше отличие?
+              </summary>
+              <p class="faq__answer">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa doloribus rerum
+                dolore excepturi enim quidem, itaque neque assumenda impedit nostrum. Possimus nemo
+                totam sequi soluta corrupti commodi maxime, accusamus illo! Dolore totam veniam
+                cupiditate quas porro, doloremque assumenda. Veritatis laudantium culpa doloremque
+                optio, voluptatibus temporibus! Atque necessitatibus, optio deserunt dolore eaque
+                aliquid perferendis in quam fuga voluptates, dolor suscipit illo. Quod sapiente
+                laborum impedit veritatis qui facere in perferendis iste quis cumque reiciendis
+                omnis consectetur sint dolores esse vel quo, exercitationem provident? Nihil qui ex
+                nemo. Consectetur iste modi laudantium? Nesciunt amet, totam eos magnam veritatis
+                maxime vel earum laboriosam hic assumenda explicabo enim, molestiae repellat rerum
+                et harum suscipit vitae. Repellat dolorem dolorum officiis velit voluptas maiores
+                voluptatem iusto! Consequatur laudantium corporis recusandae dolor tempora, tenetur
+                corrupti at. Quaerat ducimus rem velit culpa eaque quasi corrupti reiciendis minima,
+                enim tempora quas ea maiores doloremque laudantium nemo, saepe ullam quibusdam.
+              </p>
+            </details>
+            <details class="faq__question-block">
+              <summary class="faq__question">
+                Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
+              </summary>
+              <p class="faq__answer">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio alias suscipit
+                veniam pariatur quos sit ex saepe omnis ea maxime sapiente qui necessitatibus culpa
+                blanditiis, incidunt eveniet. Consequuntur, odio ex. Nihil, expedita id. Adipisci
+                blanditiis nobis sapiente, officiis eveniet excepturi ipsa harum, totam voluptatem
+                illum quam. Exercitationem possimus, quia repudiandae fugit debitis odit quo culpa
+                ut ducimus rerum fuga numquam. Autem, veniam ipsam sit quisquam voluptatum ullam in
+                ab laboriosam iure quidem ad corporis cupiditate repudiandae consequatur assumenda
+                architecto fugit voluptatibus exercitationem expedita vel vero maiores! Nobis
+                repellat at iste? Animi magnam explicabo consectetur accusantium tenetur nulla
+                aliquam quidem voluptatem error omnis placeat, labore iste laudantium at ducimus,
+                exercitationem dolore porro praesentium similique ipsum atque tempora, sint sed
+                numquam! Corrupti.
+              </p>
+            </details>
+            <details class="faq__question-block">
+              <summary class="faq__question">
+                Могу ли я вернуть деньги на каком-либо из этапов работ?
+              </summary>
+              <p class="faq__answer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod a autem dolorem
+                corporis earum vero soluta eos repudiandae beatae perspiciatis tempora libero,
+                ducimus veritatis aspernatur distinctio alias cupiditate, vitae quo! Impedit
+                provident dicta aut? Fugit, consequuntur iste a sequi ipsa incidunt quidem,
+                cupiditate nisi esse consectetur deserunt unde fuga saepe, magni vel officia nam
+                natus quam eveniet repellat reprehenderit ab. Dolorum consequuntur quidem, inventore
+                sunt adipisci expedita? Nihil eveniet, ipsam magni rem quae quam vel quidem eligendi
+                illo tenetur consectetur aperiam vitae laboriosam architecto consequatur maxime
+                dolor id. Ut, fuga?
+              </p>
+            </details>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__header">
+          <img src="/img/footer-logo.png" alt="Евклид - проектные системы" class="footer__logo" />
+          <nav class="footer__navbar">
+            <ul class="footer__navbar-list">
+              <li class="footer__navbar-item">
+                <a href="#" class="footer__navbar-link">О нас</a>
+              </li>
+              <li class="footer__navbar-item">
+                <a href="#" class="footer__navbar-link">Проекты</a>
+              </li>
+              <li class="footer__navbar-item">
+                <a href="#" class="footer__navbar-link">Отзывы</a>
+              </li>
+              <li class="footer__navbar-item">
+                <a href="#" class="footer__navbar-link">Договор оферты</a>
+              </li>
+              <li class="footer__navbar-item">
+                <a href="#" class="footer__navbar-link">Договор подряда</a>
+              </li>
+              <li class="footer__navbar-item">
+                <a href="#" class="footer__navbar-link">Конфиденциальность</a>
+              </li>
+              <li class="footer__navbar-item">
+                <a href="#" class="footer__navbar-link">Партнёрское соглашение</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__socials-container">
+            <a href="#" class="footer__socials-link"
+              ><img src="/img/icons/ok.svg" alt="Одноклассники" class="footer__socials-icon"
+            /></a>
+            <a href="#" class="footer__socials-link"
+              ><img src="/img/icons/vk.svg" alt="Вконтакте" class="footer__socials-icon"
+            /></a>
+          </div>
+        </div>
+        <form
+          action="https://jsonplaceholder.typicode.com/posts"
+          method="post"
+          class="footer__form form"
+          id="contacts"
+        >
+          <h2 class="article-header form__header">Оставить заявку</h2>
+          <input
+            class="form__userdata"
+            type="text"
+            name="fio"
+            placeholder="Фамилия, имя и отчество*"
+            required
+          />
+          <input class="form__userdata" type="email" name="email" placeholder="Email*" required />
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            class="form__message"
+            placeholder="Сообщение"
+          ></textarea>
+          <div class="form__btn-container">
+            <button class="btn-main form__btn">Отправить данные</button>
+            <label for="terms" class="form__terms-agree">
+              <input class="form__check" type="checkbox" name="terms" id="terms" />Согласен
+              на обработку данных
+            </label>
+          </div>
+        </form>
+        <p class="footer__text">
+          Высокий уровень вовлечения представителей целевой аудитории является чётким
+          доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление
+          позволяет оценить значение модели развития. Таким образом, консультация с широким активом
+          обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
